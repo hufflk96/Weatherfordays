@@ -9,3 +9,4 @@ To use this website simply enter your desired city's name and press search. Afte
 
 ## Links
 https://github.com/hufflk96/Weatherfordays
+https://hufflk96.github.io/Weatherfordays/
