@@ -1,0 +1,52 @@
+:root{
+     --darker-blue: rgb(92, 5, 114);
+}
+.info-text{
+    color:var(--bs-info-text);
+} 
+.info-text-bg{
+    background-color: var(--bs-info-text);
+}
+a{
+    text-decoration: solid;
+}
+.dark-blue{
+    background-color: var(--darkblue);
+}
+.darker-blue{
+    background-color: var(--darker-blue);
+}
+.darker-text{
+    color: var(--darker-blue);
+}
+body{
+    text-align: center;
+}
+
+.fusion{
+    flex-direction: column;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 660px) {
+    aside{
+        height: auto;
+    }
+    #citySearch{
+        height: min-content;
+    }
+    #boxContainer{
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 780px) {
+    #citySearchHeading{
+        font-size: large;
+    }
+    #currWeatherHeading{
+        font-size: large;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body data-bs-theme="light" class="bg-light">
+    <nav class="navbar darker-blue container-fluid">
+       <h1 class="ms-3 text-light"> Weather Dashboard</h1>
+    </nav>
+
+    <main id="mainContent" class="d-flex">
+        <aside id="citySearch" class="bg-light col-3 d-flex flex-column">
+        <div class="bg-primary py-1">
+            <h3 id="citySearchHeading" class="text-center text-light">Find Your City: </h3>
+        </div>
+            <div id="suggestionContainer" class="rounded-bottom">
+                <div class="card bg-light-subtle input-group-lg">
+                    <input id="cityName" class="mx-1 mt-2 rounded border-light" type="text" placeholder="Chicago, IL">
+                    <button id="searchBtn" type="submit" class="bg-primary text-light border-primary mx-1 mt-1 rounded">Search</button>
+                    <div id="citySuggestions" class="d-flex flex-column mt-3 text-center">
+                        <p class="card bg-primary-subtle border-primary mx-1"><a id='rec1' href=" " class="streched-link text-dark">Raleigh</a></p>
+                        <p class="card bg-primary-subtle border-primary mx-1"><a id="rec2" href=" " class="streched-link text-dark">Chapel Hill</a></p> 
+                        <p class="card bg-primary-subtle border-primary mx-1"><a id="rec3" href=" " class="streched-link text-dark">Wilmington</a></p>
+                        <p class="card bg-primary-subtle border-primary mx-1"><a id="rec4" href=" " class="streched-link text-dark">Greenville</a></p>
+                        <p class="card bg-primary-subtle border-primary mx-1"><a id="rec5" href=" " class="streched-link text-dark">Durham</a></p>
+                    </div> 
+                </div>
+            </div>
+            
+        </aside>
+
+        <div id="cityData" class="col-9 text-center mb-5">
+            <div class="">
+                <div class="py-1 bg-primary text-light">
+                    <h3 id="currWeatherHeading">Current Weather: </h3>
+                </div>
+                
+                <div class="bg-light">
+                    <h3 id="cityTitle" class="fs-1 mt-2 darker-text"></h3>
+                    <p id="currentDate" class="fs-5"></p>
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <div class="flex-column bg-primary rounded me-4">
+                                <i id="weatherIcon" src=" "></i>
+                            </div>
+                            <div class="flex-column align-items-end justify-content-center">
+                                <p id="currentTemp" class="fs-4 darker-text">Temperature:</p>
+                                <p id="windSpeed" class="fs-6">Wind:</p>
+                                <p id="humidity" class="fs-6">Humidity:</p> 
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <div id="boxContainer" class="d-flex justify-content-center container-fluid ">
+
+            </div>
+                
+        </div>
+        
+            
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>    <script src="https://kit.fontawesome.com/0a50c2e339.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    
+</body>
+
+
+</html>
